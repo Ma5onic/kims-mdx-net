@@ -1,0 +1,23 @@
+# @package _global_
+
+# to execute this experiment run:
+# python run.py experiment=example_simple.yaml
+
+defaults:
+  - multigpu_default
+
+seed: 2021
+
+logger:
+  wandb:
+    name: 'mdx_vocals'
+
+trainer:
+  gpus: '0'
+
+datamodule:
+  batch_size: 7
+  num_workers: 2
+  pin_memory: True
+  overlap: 3072
+  persistent_workers: True

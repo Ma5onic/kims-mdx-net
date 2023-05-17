@@ -1,0 +1,18 @@
+name: mdx-net
+
+channels:
+  - pytorch
+  - conda-forge
+
+dependencies:
+  - python=3.8
+  - pip
+  - cudatoolkit
+  - pytorch=1.8.1
+  - librosa=0.8
+  - ffmpeg
+  - onnxruntime
+  - nvidia-apex=0.1
+
+  - pip:
+      - -r requirements.txt
